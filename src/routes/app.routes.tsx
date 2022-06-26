@@ -1,4 +1,5 @@
 
+import { Button } from "@mui/material";
 import {
     Routes,
     Route,
@@ -8,7 +9,7 @@ import {
 export function AppRoutes() {
     return (
         <Routes>
-            <Route path="/paginahome" element={<p>Pagina Home</p>} />
+            <Route path="/paginahome" element={<Button variant="contained" color="secondary">Teste</Button>} />
             <Route path="*" element={<Navigate to={"/paginahome"} />} />
         </Routes>
     )
